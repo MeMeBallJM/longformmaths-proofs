@@ -1,0 +1,112 @@
+
+% Theorem environment
+\definecolor{theorem_color_background}{HTML}{F8E7EE}
+\definecolor{theorem_color_frame}{HTML}{C73A71}
+\definecolor{theorem_color_title}{HTML}{FFFFFF}
+\newtcbtheorem[number within=section]{theorem}{Theorem}
+{
+  skin=enhanced,
+  boxrule = 0.75mm,
+  sharp corners,
+  % Title settings
+  attach boxed title to top left = {
+      yshift*=-\tcboxedtitleheight/2,
+      xshift = 10mm,
+    },
+  boxed title style = {colback=theorem_color_frame, sharp corners},
+  % Adjust colors
+  colback= theorem_color_background,
+  colframe= theorem_color_frame,
+  coltitle = theorem_color_title,
+}{theorem}
+
+% Proposition environment
+\definecolor{proposition_color_background}{HTML}{FCF6EB}
+\definecolor{proposition_color_frame}{HTML}{DCA323}
+\definecolor{proposition_color_title}{HTML}{000000}
+\newtcbtheorem[number within=section]{proposition}{Proposition}
+{
+  skin=enhanced,
+  boxrule = 0.75mm,
+  sharp corners,
+  % Title settings
+  attach boxed title to top left = {
+      yshift*=-\tcboxedtitleheight/2,
+      xshift = 10mm,
+    },
+  boxed title style = {colback=proposition_color_frame, sharp corners},
+  % Adjust colors
+  colback= proposition_color_background,
+  colframe= proposition_color_frame,
+  coltitle = proposition_color_title,
+}{proposition}
+
+% Lemma environment
+\definecolor{lemma_color_background}{HTML}{DFF0DC}
+\definecolor{lemma_color_frame}{HTML}{468C3B}
+\definecolor{lemma_color_title}{HTML}{FFFFFF}
+\newtcbtheorem[number within=section]{lemma}{Lemma}
+{
+  skin=enhanced,
+  boxrule = 0.75mm,
+  sharp corners,
+  % Title settings
+  attach boxed title to top left = {
+      yshift*=-\tcboxedtitleheight/2,
+      xshift = 10mm,
+    },
+  boxed title style = {colback=lemma_color_frame, sharp corners},
+  % Adjust colors
+  colback= lemma_color_background,
+  colframe= lemma_color_frame,
+  coltitle = lemma_color_title,
+}{lemma}
+
+
+% Fact environment
+\definecolor{fact_color_background}{HTML}{DCE3FF}
+\definecolor{fact_color_frame}{HTML}{3F69FF}
+\definecolor{fact_color_title}{HTML}{FFFFFF}
+\newtcbtheorem[number within=section]{fact}{Fact}
+{
+  skin=enhanced,
+  boxrule = 0.75mm,
+  sharp corners,
+  % Title settings
+  attach boxed title to top left = {
+      yshift*=-\tcboxedtitleheight/2,
+      xshift = 10mm,
+    },
+  boxed title style = {colback=fact_color_frame, sharp corners},
+  % Adjust colors
+  colback= fact_color_background,
+  colframe= fact_color_frame,
+  coltitle = fact_color_title,
+}{fact}
+
+% Problem environment
+\definecolor{problem_color_background}{HTML}{FFDFCF}
+\definecolor{problem_color_frame}{HTML}{FF5200}
+\definecolor{problem_color_title}{HTML}{000000}
+\newtcbtheorem[number within=section]{problem}{Problem}
+{
+  skin=enhanced,
+  boxrule = 0.75mm,
+  sharp corners,
+  % Title settings
+  attach boxed title to top left = {
+      yshift*=-\tcboxedtitleheight/2,
+      xshift = 10mm,
+    },
+  boxed title style = {colback=problem_color_frame, sharp corners},
+  % Adjust colors
+  colback= problem_color_background,
+  colframe= problem_color_frame,
+  coltitle = problem_color_title,
+}{problem}
+
+
+
+
+
+
