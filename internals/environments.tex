@@ -105,6 +105,28 @@
   coltitle = problem_color_title,
 }{problem}
 
+% Definition environment
+\definecolor{definition_color_background}{HTML}{D6D6E0}
+\definecolor{definition_color_frame}{HTML}{68668A}
+\definecolor{definition_color_title}{HTML}{FFFFFF}
+\newtcbtheorem[number within=section]{definition}{Definition}
+{
+  skin=enhanced,
+  boxrule = 0.75mm,
+  sharp corners,
+  % Title settings
+  attach boxed title to top left = {
+      yshift*=-\tcboxedtitleheight/2,
+      xshift = 10mm,
+    },
+  boxed title style = {colback=definition_color_frame, sharp corners},
+  % Adjust colors
+  colback= definition_color_background,
+  colframe= definition_color_frame,
+  coltitle = definition_color_title,
+}{definition}
+
+
 
 
 
