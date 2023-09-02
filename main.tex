@@ -50,5 +50,83 @@ TODO
 
 \chapter{Direct proofs}
 
+\begin{fact}{}{IntegerClosure}
+  The sum of integers in an integer, the difference of integers is an integer, and the product of integers is an integer.
+\end{fact}
+
+\begin{definition}{Even and odd integers}{EvenAndOdd}
+  \begin{itemize}
+    \item[$\bullet$] An integer $n$ is even if $n = 2k$ for some integer $k$;
+    \item[$\bullet$] An integer $n$ is odd if $n = 2k + 1$ for some integer $k$.
+  \end{itemize}
+
+  Fact: Any integer is either even or odd.
+
+\end{definition}
+
+\begin{proposition*}{}
+  The sum of an even integer and an odd integer is odd.
+\end{proposition*}
+
+\begin{proof}
+  Assume that $n$ is an even integer and that $m$ is an odd integer.
+  By the definition of even and odd numbers $n = 2a$ and $m = 2b + 1$ for some integers $a$ and $b$.
+  Then, $$n + m = (2a) + (2b + 1) = 2a + 2b + 1 = 2(a + b) + 1.$$
+  And since $a + b$ is an integer by Fact 2.0.1, we have shown that $n + m = 2k + 1$ where $k = a + b$.
+  Therefore by the definition of an odd integer this means that $a + b$ is odd.
+\end{proof}
+
+\begin{proposition*}{}
+  The product of two even integers is even.
+\end{proposition*}
+
+\begin{proof}
+  Assume that $n$ and $m$ are even integers.
+  By the definition of an even integer $n = 2a$ and $m = 2b$ for some integers $a$ and $b$.
+  Then, $$nm = (2a)(2b) = 4ab = 2(2ab).$$
+  And since $2ab$ is an integer by Fact 2.0.1, we have shown that $nm = 2k$ where $k = 2ab$.
+  Therefore by the definition of an even integer this means that $nm$ is even.
+\end{proof}
+
+\begin{proposition*}{}
+  The product of two odd integers is odd.
+\end{proposition*}
+
+\begin{proof}
+  Assume that $n$ and $m$ are odd integers.
+  By the definition of an odd integer this means that $n = 2a + 1$ and $m = 2b + 1$ for some integers $a$ and $b$.
+  Then, $$nm = (2a + 1)(2b + 1) = 4ab + 2a + 2b + 1 = 2(2ab + a + b) + 1.$$
+  And since $2ab + a + b$ is an integer by Fact 2.0.1, we have shown that $nm = 2k + 1$ where $k = 2ab + a + b$.
+  Therefore by the definition of an odd integer this means that $nm$ is odd.
+\end{proof}
+
+\begin{proposition*}{}
+  The product of an even integer and an odd integer is even.
+\end{proposition*}
+
+\begin{proof}
+  Assume that $n$ is an even integer and $m$ is an odd integer.
+  By the definition of an even and odd integer this means that $n = 2a$ and $m = 2b + 1$ for some integers $a$ and $b$.
+  Then, $$nm = (2a)(2b + 1) = 4ab + 2a = 2(2ab + a).$$
+  Since $2ab + a$ is an integer by Fact 2.0.1, we have shown that $nm = 2k$ where $k = 2ab + a$.
+  Therefore by the definition of an even integer this means that $nm$ is even.
+\end{proof}
+
+\begin{proposition*}{}
+  An even integer squared is an even integer.
+\end{proposition*}
+
+\begin{proof}
+  Assume that $n$ is an even integer.
+  By the definition of an even integer $n = 2a$ for some integer $a$.
+  Then, $$n^2 = (2a)^2 = 4a^2 = 2(2a^2).$$
+  Since $2a^2$ is an integer by Fact 2.0.1, we have shown that $n^2 = 2k$ where $k = 2a^2$.
+  Therefore by the definition of an even integer this means that $n^2$ is even.
+\end{proof}
+
+\begin{definition}{}{}
+  A nonzero integer $a$ is said to \emph{divide} an integer $b$ if $b = ak$ for some integer $k$.
+  When $a$ does divide $b$, we write $``a \mid b"$ and when $a$ does not divide $b$ we write $``a \nmid b."$
+\end{definition}
 
 \end{document}
