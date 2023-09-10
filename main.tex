@@ -129,4 +129,40 @@ TODO
   When $a$ does divide $b$, we write $``a \mid b"$ and when $a$ does not divide $b$ we write $``a \nmid b."$
 \end{definition}
 
+\begin{proposition}{}{}
+  If $d \mid a$ and $d \mid b$ then $d \mid a + b$.
+\end{proposition}
+
+\begin{proof}
+  Assume that $d \mid a$ and $d \mid b$.
+  By the definition of divisibility $a = dk$ and $b = dl$ for some integers $k$ and $l$.
+  Then, $$a + b = dk + dl = d(k + l).$$
+  Since $k + l$ is an integer by Fact 2.0.1, we have shown that $a + b = dq$ where $q = k + l$.
+  Therefore by the definition of divisibility this means that $d \mid a + b$.
+\end{proof}
+
+\begin{proposition}{}{}
+  If $d \mid b$ then $d \mid -b$.
+\end{proposition}
+
+\begin{proof}
+  Assume that $d \mid b$.
+  By the definition of divisibility $dk = b$ for some integer $k$.
+  Then, $$-b = -(dk) = d(-k).$$
+  Since $-k$ is an integer by Fact 2.0.1, we have shown that $-b = dq$ where $q = -k$.
+  Therefore by the definition of divisibility this means that $d \mid -b$.
+\end{proof}
+
+\begin{proposition}{}{}
+  If $d \mid b$ then $-d \mid b$.
+\end{proposition}
+
+\begin{proof}
+  Assume that $d \mid b$.
+  By the definition of divisibility $dk = b$ for some integer $k$.
+  Then, $$b = dk = --dk = -d(-k)$$
+  Since $-k$ is an integer by Fact 2.0.1, we have shown that $b = -dq$ where $q = -k$.
+  Therefore by the definition of divisibility this means that $-d \mid b$.
+\end{proof}
+
 \end{document}
