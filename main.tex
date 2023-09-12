@@ -165,4 +165,22 @@ TODO
   Therefore by the definition of divisibility this means that $-d \mid b$.
 \end{proof}
 
+\begin{definition}{Modular Congruence}{}
+  For integers $a, r$ and $m$, we say that $a$ is \emph{congruent} to $r$ \emph{modulo} $m$, and we write $a \equiv r \pmod{m}$, if $m \mid (a - r)$.
+\end{definition}
+
+\begin{proposition}{}{}
+  If $a,b,c,d$ and $m$ are integers, $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$. Then, $a + c \equiv b + d \pmod{m}$.
+\end{proposition}
+
+\begin{proof}
+  Assume that $a,b,c,d$ and $m$ are integers, $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$.
+  By the definition of modular congruence divisibility this means that $m \mid (a - b)$ and $m \mid (c - d)$.
+  Applying the definition of divisibility we get $mk = a - b$ and $ml = c - d$ for some integers $k$ and $l$.
+  Then, $$a + c - (b + d) = a - b + c - d = mk + ml = m(k + l).$$
+  Since by Fact 2.0.1 $k + l$ is an integer, we have shown that $a + c - (b + d) = mq$ where $q = k + l$.
+  Therefore by the definition of divisibility $m \mid a + c - (b + d)$.
+  Furthermore by the definition of modular congruence $a + c \equiv b + d \pmod{m}$.
+\end{proof}
+
 \end{document}
