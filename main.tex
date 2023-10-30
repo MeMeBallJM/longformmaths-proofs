@@ -203,21 +203,20 @@ TODO
   If $a,b,c,d$ and $m$ are integers, $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$. then, $ac \equiv bd \pmod{m}$.
 \end{proposition}
 
-\begin{proof}
-  Assume that $a,b,c,d$ and $m$ are integers, $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$.
-  By the definition of modular congruence this means that $m \mid (a - b)$ and $m \mid (c - d)$.
-  Applying the definition of divisibility we get $mk = a - b$ and $ml = c - d$ for some integers $k$ and $l$.
-  Then, $$ac - bd = $$
-  TODO
-\end{proof}
+I was unable to do this problem in a reasonable amount of time :/ I ended up looking at the answer.
+
+\begin{proposition}{}{}
+  Prove that for every integer $n$, either $n^2 \equiv 0 \pmod{4}$ or $n^2 \equiv 1 \pmod{4}$.
+\end{proposition}
 
 \begin{definition}{Greatest common divisor}{}
   Given two integers $a$ and $b$, the \emph{greatest common divisor} of $a$ and $b$ is the largest integer $d$, such that $d \mid a$ and $d \mid b$.
   We say that the $\gcd(a, b) = d$.
 \end{definition}
 
+
 \begin{lemma}{}{}
-  If $a$, $b$ and $c$ are integers and $\gcd(a, b)  = 1$ and $\gcd(a, c) = 1$ then, $\gcd(a, bc) = 1$.
+  If $a$, $b$  are integers then $\gcd(a, b)  = \gcd(b, a)$.
 \end{lemma}
 
 \begin{proof}
@@ -232,17 +231,17 @@ TODO
 \end{definition}
 
 \begin{definition}{Union}{}
-  The \emph{union} of sets $A$ and $B$ is the set $A \cup B = \{x : x \in A \lor x \in B\}$.
+  The \emph{union} of sets $A$ and $B$ is the set $A \cup B = \{x : x \in A \tor x \in B\}$.
   Furthermore if $\mathscr{A}$ is a set of sets, then $\bigcup_{S \in \mathscr{A}} S$ is the \emph{union} between all subsets of $\mathscr{A}$.
 \end{definition}
 
 \begin{definition}{Intersection}{}
-  The \emph{intersection} of sets $A$ and $B$ is the set $A \cap B = \{x : x \in A \land x \in B\}$.
+  The \emph{intersection} of sets $A$ and $B$ is the set $A \cap B = \{x : x \in A \tand x \in B\}$.
   Furthermore if $\mathscr{A}$ is a set of sets, then $\bigcap_{S \in \mathscr{A}} S$ is the \emph{intersection} between all subsets of $\mathscr{A}$.
 \end{definition}
 
 \begin{definition}{Set subtraction}{}
-  The \emph{subtraction} of sets $B$ from $A$ is the set $A \setminus B = \{x : x \in A \land x \notin B\}$.
+  The \emph{subtraction} of sets $B$ from $A$ is the set $A \setminus B = \{x : x \in A \tand x \notin B\}$.
 \end{definition}
 
 \begin{definition}{Complement of a set}{}
