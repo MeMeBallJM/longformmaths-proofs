@@ -5,7 +5,6 @@
 
 \usepackage{mathrsfs}
 
-
 \begin{document}
 
 \title{Proofs problems}
@@ -208,6 +207,27 @@ I was unable to do this problem in a reasonable amount of time :/ I ended up loo
 \begin{proposition}{}{}
   Prove that for every integer $n$, either $n^2 \equiv 0 \pmod{4}$ or $n^2 \equiv 1 \pmod{4}$.
 \end{proposition}
+
+\begin{proof}
+  Assume that $n$ is an integer. By definition 2.0.1, $n$ is either even or odd.
+
+  First consider the case when $n$ is even. By the definition of an even integer $n = 2k$ for some integer $k$.
+  Then, $$n^2 = (2k)^2 = 4k^2 = 4(k^2).$$
+  Since by Fact 2.0.1 $k^2$ is an integer, we have shown that $n^2 = 4p$ where $p = k^2$.
+  Therefore by the definition of divisibility $4 \mid n^2$.
+  Furthermore by the definition of modular congruence $n^2 \equiv 0 \pmod{4}$.
+  Based on that $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$.
+
+  Now consider the case when $n$ is odd. By the definition of an odd integer $n = 2k + 1$ for some integer $k$.
+  Then, $$n^2 - 1 = (2k+1)^2 - 1 = 4k^2+4k= 4(k^2+k).$$
+  Since by Fact 2.0.1 $k^2+k$ is an integer, we have shown that $n^2 - 1 = 4p$ where $p = k^2+k$.
+  Therefore by the definition of divisibility $4 \mid n^2 - 1$.
+  Furthermore by the definition of modular congruence $n^2 \equiv 1 \pmod{4}$.
+  Based on that $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$.
+
+  Since $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$ both when $n$ is even and when $n$ is odd,
+  we have proven that $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$ for all integers $n$.
+\end{proof}
 
 \begin{definition}{Greatest common divisor}{}
   Given two integers $a$ and $b$, the \emph{greatest common divisor} of $a$ and $b$ is the largest integer $d$, such that $d \mid a$ and $d \mid b$.
