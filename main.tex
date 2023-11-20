@@ -13,7 +13,6 @@
 
 \chapter{Intuitive Proofs}
 
-
 \begin{fact}{The pigeonhole principle}{PHP}
   \textbf{Simple form:} If $n + 1$ objects are placed into $n$ boxes, then at least one box has at least two objects in it. \\
   \textbf{General form:} If $kn + 1$ objects are placed into $n$ boxes, then at least one box has at least $k + 1$ objects in it.
@@ -74,7 +73,7 @@ TODO
   By the definition of even and odd numbers $n = 2a$ and $m = 2b + 1$ for some integers $a$ and $b$.
   Then, $$n + m = (2a) + (2b + 1) = 2a + 2b + 1 = 2(a + b) + 1.$$
   And since $a + b$ is an integer by Fact 2.0.1, we have shown that $n + m = 2k + 1$ where $k = a + b$.
-  Therefore by the definition of an odd integer this means that $a + b$ is odd.
+  Therefore, by the definition of an odd integer this means that $a + b$ is odd.
 \end{proof}
 
 \begin{proposition*}{}
@@ -86,7 +85,7 @@ TODO
   By the definition of an even integer $n = 2a$ and $m = 2b$ for some integers $a$ and $b$.
   Then, $$nm = (2a)(2b) = 4ab = 2(2ab).$$
   And since $2ab$ is an integer by Fact 2.0.1, we have shown that $nm = 2k$ where $k = 2ab$.
-  Therefore by the definition of an even integer this means that $nm$ is even.
+  Therefore, by the definition of an even integer this means that $nm$ is even.
 \end{proof}
 
 \begin{proposition*}{}
@@ -98,7 +97,7 @@ TODO
   By the definition of an odd integer this means that $n = 2a + 1$ and $m = 2b + 1$ for some integers $a$ and $b$.
   Then, $$nm = (2a + 1)(2b + 1) = 4ab + 2a + 2b + 1 = 2(2ab + a + b) + 1.$$
   And since $2ab + a + b$ is an integer by Fact 2.0.1, we have shown that $nm = 2k + 1$ where $k = 2ab + a + b$.
-  Therefore by the definition of an odd integer this means that $nm$ is odd.
+  Therefore, by the definition of an odd integer this means that $nm$ is odd.
 \end{proof}
 
 \begin{proposition*}{}
@@ -110,7 +109,7 @@ TODO
   By the definition of an even and odd integer this means that $n = 2a$ and $m = 2b + 1$ for some integers $a$ and $b$.
   Then, $$nm = (2a)(2b + 1) = 4ab + 2a = 2(2ab + a).$$
   Since $2ab + a$ is an integer by Fact 2.0.1, we have shown that $nm = 2k$ where $k = 2ab + a$.
-  Therefore by the definition of an even integer this means that $nm$ is even.
+  Therefore, by the definition of an even integer this means that $nm$ is even.
 \end{proof}
 
 \begin{proposition*}{}
@@ -122,7 +121,7 @@ TODO
   By the definition of an even integer $n = 2a$ for some integer $a$.
   Then, $$n^2 = (2a)^2 = 4a^2 = 2(2a^2).$$
   Since $2a^2$ is an integer by Fact 2.0.1, we have shown that $n^2 = 2k$ where $k = 2a^2$.
-  Therefore by the definition of an even integer this means that $n^2$ is even.
+  Therefore, by the definition of an even integer this means that $n^2$ is even.
 \end{proof}
 
 \begin{definition}{}{}
@@ -139,7 +138,7 @@ TODO
   By the definition of divisibility $a = dk$ and $b = dl$ for some integers $k$ and $l$.
   Then, $$a + b = dk + dl = d(k + l).$$
   Since $k + l$ is an integer by Fact 2.0.1, we have shown that $a + b = dq$ where $q = k + l$.
-  Therefore by the definition of divisibility this means that $d \mid a + b$.
+  Therefore, by the definition of divisibility this means that $d \mid a + b$.
 \end{proof}
 
 \begin{proposition}{}{}
@@ -151,7 +150,7 @@ TODO
   By the definition of divisibility $dk = b$ for some integer $k$.
   Then, $$-b = -(dk) = d(-k).$$
   Since $-k$ is an integer by Fact 2.0.1, we have shown that $-b = dq$ where $q = -k$.
-  Therefore by the definition of divisibility this means that $d \mid -b$.
+  Therefore, by the definition of divisibility this means that $d \mid -b$.
 \end{proof}
 
 \begin{proposition}{}{}
@@ -163,7 +162,7 @@ TODO
   By the definition of divisibility $dk = b$ for some integer $k$.
   Then, $$b = dk = --dk = -d(-k)$$
   Since $-k$ is an integer by Fact 2.0.1, we have shown that $b = -dq$ where $q = -k$.
-  Therefore by the definition of divisibility this means that $-d \mid b$.
+  Therefore, by the definition of divisibility this means that $-d \mid b$.
 \end{proof}
 
 \begin{definition}{Modular Congruence}{}
@@ -180,8 +179,8 @@ TODO
   Applying the definition of divisibility we get $mk = a - b$ and $ml = c - d$ for some integers $k$ and $l$.
   Then, $$(a + c) - (b + d) = (a - b) + (c - d) = mk + ml = m(k + l).$$
   Since by Fact 2.0.1 $k + l$ is an integer, we have shown that $(a + c) - (b + d) = mq$ where $q = k + l$.
-  Therefore by the definition of divisibility $m \mid (a + c) - (b + d)$.
-  Furthermore by the definition of modular congruence $a + c \equiv b + d \pmod{m}$.
+  Therefore, by the definition of divisibility $m \mid (a + c) - (b + d)$.
+  Furthermore, by the definition of modular congruence $a + c \equiv b + d \pmod{m}$.
 \end{proof}
 
 \begin{proposition}{}{}
@@ -194,12 +193,12 @@ TODO
   Applying the definition of divisibility we get $mk = a - b$ and $ml = c - d$ for some integers $k$ and $l$.
   Then, $$(a - c) -(b - d) = (a - b) -(c - d) = mk - ml = m(k-l).$$
   Since by Fact 2.0.1 $k - l$ is an integer, we have shown that $(a - c) - (b - d) = mq$ where $q = k - l$.
-  Therefore by the definition of divisibility $m \mid (a - c) - (b - d)$.
-  Furthermore by the definition of modular congruence $a - c \equiv b - d \pmod{m}$.
+  Therefore, by the definition of divisibility $m \mid (a - c) - (b - d)$.
+  Furthermore, by the definition of modular congruence $a - c \equiv b - d \pmod{m}$.
 \end{proof}
 
 \begin{proposition}{}{}
-  If $a,b,c,d$ and $m$ are integers, $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$. then, $ac \equiv bd \pmod{m}$.
+  If $a,b,c,d$ and $m$ are integers, $a \equiv b \pmod{m}$ and $c \equiv d \pmod{m}$. Then, $ac \equiv bd \pmod{m}$.
 \end{proposition}
 
 I was unable to do this problem in a reasonable amount of time :/ I ended up looking at the answer.
@@ -214,15 +213,15 @@ I was unable to do this problem in a reasonable amount of time :/ I ended up loo
   First consider the case when $n$ is even. By the definition of an even integer $n = 2k$ for some integer $k$.
   Then, $$n^2 = (2k)^2 = 4k^2 = 4(k^2).$$
   Since by Fact 2.0.1 $k^2$ is an integer, we have shown that $n^2 = 4p$ where $p = k^2$.
-  Therefore by the definition of divisibility $4 \mid n^2$.
-  Furthermore by the definition of modular congruence $n^2 \equiv 0 \pmod{4}$.
+  Therefore, by the definition of divisibility $4 \mid n^2$.
+  Furthermore, by the definition of modular congruence $n^2 \equiv 0 \pmod{4}$.
   Based on that $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$.
 
   Now consider the case when $n$ is odd. By the definition of an odd integer $n = 2k + 1$ for some integer $k$.
   Then, $$n^2 - 1 = (2k+1)^2 - 1 = 4k^2+4k= 4(k^2+k).$$
   Since by Fact 2.0.1 $k^2+k$ is an integer, we have shown that $n^2 - 1 = 4p$ where $p = k^2+k$.
-  Therefore by the definition of divisibility $4 \mid n^2 - 1$.
-  Furthermore by the definition of modular congruence $n^2 \equiv 1 \pmod{4}$.
+  Therefore, by the definition of divisibility $4 \mid n^2 - 1$.
+  Furthermore, by the definition of modular congruence $n^2 \equiv 1 \pmod{4}$.
   Based on that $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$.
 
   Since $n^2 \equiv 0 \pmod{4} \tor n^2 \equiv 1 \pmod{4}$ both when $n$ is even and when $n$ is odd,
@@ -245,19 +244,18 @@ I was unable to do this problem in a reasonable amount of time :/ I ended up loo
 
 \chapter{Sets}
 
-
 \begin{definition}{Subsets}{}
   Suppose $A$ and $B$ are sets. If every element in $A$ is also in $B$, then $A$ is a \emph{subset} of $B$, denoted $A \subseteq B$.
 \end{definition}
 
 \begin{definition}{Union}{}
   The \emph{union} of sets $A$ and $B$ is the set $A \cup B = \{x : x \in A \tor x \in B\}$.
-  Furthermore if $\mathscr{A}$ is a set of sets, then $\bigcup_{S \in \mathscr{A}} S$ is the \emph{union} between all subsets of $\mathscr{A}$.
+  Furthermore, if $\mathscr{A}$ is a set of sets, then $\bigcup_{S \in \mathscr{A}} S$ is the \emph{union} between all subsets of $\mathscr{A}$.
 \end{definition}
 
 \begin{definition}{Intersection}{}
   The \emph{intersection} of sets $A$ and $B$ is the set $A \cap B = \{x : x \in A \tand x \in B\}$.
-  Furthermore if $\mathscr{A}$ is a set of sets, then $\bigcap_{S \in \mathscr{A}} S$ is the \emph{intersection} between all subsets of $\mathscr{A}$.
+  Furthermore, if $\mathscr{A}$ is a set of sets, then $\bigcap_{S \in \mathscr{A}} S$ is the \emph{intersection} between all subsets of $\mathscr{A}$.
 \end{definition}
 
 \begin{definition}{Set subtraction}{}
@@ -267,7 +265,40 @@ I was unable to do this problem in a reasonable amount of time :/ I ended up loo
 \begin{definition}{Complement of a set}{}
   If $A \subseteq U$, then $U$ is called a \emph{universal set} of $A$.
   The \emph{complement} of $A$ in $U$ is $A^c = U \setminus A$.
-
 \end{definition}
+
+\begin{proposition}{}{}
+  Suppose $A, B$ and $C$ are sets.
+  Prove that $A \cup \left(B \cap C \right) = \left(A \cup B \right) \cap \left(A \cup C\right)$.
+\end{proposition}
+
+\begin{proof}
+  Assume $A, B$ and $C$ are sets.
+  We wish to show that $A \cup \left(B \cap C \right) = \left(A \cup B \right) \cap \left(A \cup C\right)$.
+  Notice that this is equivalent to proving $A \cup \left(B \cap C \right) \subseteq \left(A \cup B \right) \cap \left(A \cup C\right)$ and $\left(A \cup B \right) \cap \left(A \cup C\right) \subseteq A \cup \left(B \cap C\right)$.
+
+  To begin we will prove that $A \cup \left(B \cap C\right) \subseteq \left(A \cup B\right) \cap \left(A \cup C\right)$.
+  Assume that $x \in A \cup \left(B \cap C\right)$.
+  By the definition of the union between sets, $$x \in A \quad \tor \quad x \in B \cap C.$$
+  We will first consider the case when $x \in A$.
+  It is clear to the see that $x \in A \cup B$ and $x \in A \cup C$ by the definition of union between sets.
+  Furthermore, by the definition of intersection between sets $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
+  Now consider the case when $x \in B \cap C$. By the definition of intersections between sets, $$x \in B \quad \tand \quad x \in C.$$
+  Using the definition of union between sets we get $x \in A \cup B$ and $x \in A \cup C$.
+  Additionally, applying the definition of intersections between sets we get $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
+  Since in either case $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$ this shows that $A \cup \left(B \cap C\right) \subseteq \left(A \cup B\right) \cap \left(A \cup C\right)$.
+
+  Now we will prove that $\left(A \cup B\right) \cap \left(A \cup C\right) \subseteq A \cup \left(B \cap C\right)$.
+  Assume that $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
+  By the definition of intersections between sets. $$x \in A \cup B \quad \tand \quad x \in A \cup C.$$
+  First consider the case when $x \in A$.
+  By the definition of unions between sets $x \in A \cup \left(B \cap B\right)$.
+  Now, consider the case when $x \notin A$. Since $x \in A \cup B$, $x \in A \cup C$ and $x \notin A$,  $x \in B$ and $x \in C$.
+  Applying the definition of intersections between sets we get $x \in B \cap C$.
+  Additionally, applying the definition of unions between sets we get $x \in A \cup \left(B \cap C\right)$.
+  Since in either case $x \in A \cup \left(B \cap C\right)$ we have shown that $\left(A \cap B\right) \cup \left(A \cap C\right) \subseteq A \cup \left(B \cap C\right)$.
+
+  Both $A \cup \left(B \cap C\right)$ and $\left(A \cup B\right) \cap \left(A \cup C\right)$ are subsets of each other, this shows that they must be equal, completing the proof.
+\end{proof}
 
 \end{document}
