@@ -43,7 +43,7 @@
 \end{proof}
 
 \begin{problem*}{}
-  Determine whether or not the pigeonhole principle guarantees that two students at your school have the same 3-letter initals.
+  Determine whether or not the pigeonhole principle guarantees that two students at your school have the same 2-letter initals.
 \end{problem*}
 
 TODO
@@ -281,24 +281,62 @@ I was unable to do this problem in a reasonable amount of time :/ I ended up loo
   Assume that $x \in A \cup \left(B \cap C\right)$.
   By the definition of the union between sets, $$x \in A \quad \tor \quad x \in B \cap C.$$
   We will first consider the case when $x \in A$.
-  It is clear to the see that $x \in A \cup B$ and $x \in A \cup C$ by the definition of union between sets.
-  Furthermore, by the definition of intersection between sets $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
-  Now consider the case when $x \in B \cap C$. By the definition of intersections between sets, $$x \in B \quad \tand \quad x \in C.$$
-  Using the definition of union between sets we get $x \in A \cup B$ and $x \in A \cup C$.
-  Additionally, applying the definition of intersections between sets we get $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
+  It is clear to the see that $x \in A \cup B$ and $x \in A \cup C$ by the definition of the union between sets.
+  Furthermore, by the definition of the intersection between sets $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
+  Now consider the case when $x \in B \cap C$. By the definition of the intersection between sets, $$x \in B \quad \tand \quad x \in C.$$
+  Using the definition of the union between sets we get $x \in A \cup B$ and $x \in A \cup C$.
+  Additionally, applying the definition of the intersection between sets we get $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
   Since in either case $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$ this shows that $A \cup \left(B \cap C\right) \subseteq \left(A \cup B\right) \cap \left(A \cup C\right)$.
 
   Now we will prove that $\left(A \cup B\right) \cap \left(A \cup C\right) \subseteq A \cup \left(B \cap C\right)$.
   Assume that $x \in \left(A \cup B\right) \cap \left(A \cup C\right)$.
-  By the definition of intersections between sets. $$x \in A \cup B \quad \tand \quad x \in A \cup C.$$
+  By the definition of the intersection between sets. $$x \in A \cup B \quad \tand \quad x \in A \cup C.$$
   First consider the case when $x \in A$.
-  By the definition of unions between sets $x \in A \cup \left(B \cap B\right)$.
+  By the definition of the union between sets $x \in A \cup \left(B \cap B\right)$.
   Now, consider the case when $x \notin A$. Since $x \in A \cup B$, $x \in A \cup C$ and $x \notin A$,  $x \in B$ and $x \in C$.
-  Applying the definition of intersections between sets we get $x \in B \cap C$.
-  Additionally, applying the definition of unions between sets we get $x \in A \cup \left(B \cap C\right)$.
+  Applying the definition of the intersection between sets we get $x \in B \cap C$.
+  Additionally, applying the definition of the union between sets we get $x \in A \cup \left(B \cap C\right)$.
   Since in either case $x \in A \cup \left(B \cap C\right)$ we have shown that $\left(A \cap B\right) \cup \left(A \cap C\right) \subseteq A \cup \left(B \cap C\right)$.
 
   Both $A \cup \left(B \cap C\right)$ and $\left(A \cup B\right) \cap \left(A \cup C\right)$ are subsets of each other, this shows that they must be equal, completing the proof.
+\end{proof}
+
+\begin{proposition}{}{}
+  Suppose $A, B$ and $C$ are sets.
+  Prove that $A \cap \left(B \cup C \right) = \left(A \cap B \right) \cup \left(A \cap C\right)$.
+\end{proposition}
+
+\begin{proof}
+  Assume $A, B$ and $C$ are sets.
+  We wish to show that $A \cap \left(B \cup C \right) = \left(A \cap B \right) \cup \left(A \cap C\right)$.
+  Notice that this is equivalent to proving $A \cap \left(B \cup C \right) \subseteq \left(A \cap B \right) \cup \left(A \cap C\right)$ and $\left(A \cap B \right) \cup \left(A \cap C\right) \subseteq A \cap \left(B \cup C \right)$.
+
+  To begin we will prove that $A \cap \left(B \cup C\right) \subseteq \left(A \cap B\right) \cup \left(A \cap C\right)$.
+  Assume that $x \in A \cap \left(B \cup C\right)$.
+  By the definition of the intersection between sets, $$x \in A \quad \tand \quad x \in B \cup C.$$
+  Additionally, by the definition of unions between sets, $$x \in B \quad \tor \quad x \in C.$$
+  We will first consider the case when $x \in B$.
+  By the definition of the intersection between sets $x \in A \cap B$.
+  Furthermore, by the definition of the union between sets $x \in \left(A \cap B\right) \cup \left(A \cap C\right)$.
+  Now consider the case when $x \in C$.
+  By the definition of the intersection between sets $x \in A \cap C$.
+  Furthermore, by the definition of the union between sets $x \in \left(A \cap B\right) \cup \left(A \cap C\right)$.
+  Since in either case $x \in \left(A \cap B\right) \cup \left(A \cap C\right)$ this shows that $A \cap \left(B \cup C\right) \subseteq \left(A \cap B\right) \cup \left(A \cap C\right).$
+
+  Now we will prove that $\left(A \cap B\right) \cup \left(A \cap C\right) \subseteq A \cap \left(B \cup C\right)$.
+  Assume that $x \in \left(A \cap B\right) \cup \left(A \cap C\right)$.
+  By the definition of the union between sets, $$x \in A \cap B \quad \tor \quad x \in A \cap C.$$
+  First consider the case when $x \in A \cap B$.
+  By the definition of the intersection between sets, $$x \in A \quad \tand \quad x \in B.$$
+  Applying the definition of the union between sets $x \in B \cup C$.
+  Furthermore, by the definition of intersection between sets $x \in A \cap \left(B \cup C\right)$.
+  Now consider the case when $x \in A \cap C$.
+  By the definition of the intersection between sets, $$x \in A \quad \tand \quad x \in C.$$
+  Applying the definition of the union between sets $x \in B \cup C$.
+  Furthermore, by the definition of intersection between sets $x \in A \cap \left(B \cup C\right)$.
+  Since in either case $x \in A \cap \left(B \cup C\right)$ this shows that $\left(A \cap B\right) \cup \left(A \cap C\right) \subseteq A \cap \left(B \cup C\right)$.
+
+  Both $\left(A \cap B\right) \cup \left(A \cap C\right)$ and $A \cap \left(B \cup C\right)$ are subsets of each other, this shows that they must be equal, completing the proof.
 \end{proof}
 
 \end{document}
